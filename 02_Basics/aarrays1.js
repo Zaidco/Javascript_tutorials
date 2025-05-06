@@ -21,6 +21,8 @@ const newArr = myArr2.join() // changes array into strings
 console.log(newArr);
 console.log(typeof newArr);
 
+// console.log(myArr.reverse)
+
 console.log(myArr.indexOf(3)); // checks the index of any element
 console.log(myArr.includes(2));//checks if the element is present in the array or not
 
@@ -30,6 +32,11 @@ const newArr2=["Batman","Superman"]
 
 const newArr1_2= newArr1.concat(newArr2) // way to concat
 console.log(newArr1_2);
+
+
+let b= [1,23,4,5,6,7,6]
+console.log(b.reverse())
+
 
 
 
