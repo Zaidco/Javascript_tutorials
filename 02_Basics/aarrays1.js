@@ -24,6 +24,14 @@ console.log(typeof newArr);
 console.log(myArr.indexOf(3)); // checks the index of any element
 console.log(myArr.includes(2));//checks if the element is present in the array or not
 
+//concatenation (MIXING or ATTACHING)
+const newArr1=["Spiderman","Thor"]
+const newArr2=["Batman","Superman"]
+
+const newArr1_2= newArr1.concat(newArr2) // way to concat
+console.log(newArr1_2);
+
+
 
 
 
