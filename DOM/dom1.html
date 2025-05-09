@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="new">DOM part 1</h1>
+    
+
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+
+    <p id="new">I love MERN</p>
+
+    <script>
+
+    //fetching and manipulating elements by class name    
+    let var1= document.getElementsByClassName("new");
+    console.log(var1);
+    var1[0].innerText="learning day";
+
+    //fetching and manipulating elements by tag name    
+        let var2= document.getElementsByTagName("li")
+        console.log(var2);
+        var2[1].innerText="Four";
+
+        var2[2].style.color="red"; // color change
+
+     //fetching and manipulating elements by id 
+     let var3= document.getElementById("new");
+     console.log(var3);
+     var3.innerText="enjoy studying"
+     
+     //Qyery selector - id,class,tag can be accesed under this one selector tag
+
+     let var4=document.querySelector(".new")// for class with dot
+     let var5=document.querySelector("#new")// for id with hash
+     let var6=document.querySelector("li")// for tags
+     
+
+     console.log(var4[0])
+     console.log(var5[0])
+     console.log(var6[0])
+
+     
+        
+    
+
+    </script>
+</body>
+</html>
