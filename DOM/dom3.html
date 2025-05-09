@@ -1,0 +1,36 @@
+<!--  Buttons and Event Listeners -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Use of buttons and event listeners</h1>
+    <p id="js">Morning fam</p>
+
+    <!-- Buttons -->
+      <button onclick ="hey()" id="jss">Submit</button>
+
+    <script>
+        document.addEventListener("click",hello);
+        function hello(){
+        document.getElementById("js").innerText="We will learn DOM 3 today";
+        }
+
+        function hey(){
+            document.getElementById("jss").innerText="bye"
+            document.getElementById("jss").style.color="red"
+            document.getElementById("jss").style.backgroundColor="black"
+            //and many more attributes can be added accordingly
+        }
+        
+</script>
+
+        
+        
+    
+</body>
+</html>
