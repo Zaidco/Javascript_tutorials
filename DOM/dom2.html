@@ -1,0 +1,43 @@
+ <!-- we will see here ki only with javaScript how can we create elemets and also remove them -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+  <ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  </ul>
+  
+   <script>
+    //all these simply mean-
+    //<h1 class="new"> APPEND CHILD means simply to add ELEMENTS</h1>
+     let titlez= document.createElement("h1");
+     titlez.className="new";
+     titlez.style.color="green";
+     titlez.textContent="APPEND CHILD means simply to add ELEMENTS"
+     console.log(titlez);
+     document.body.appendChild(titlez); //append means simply push what u wrote
+      
+
+     // To remove child
+     let var1=document.querySelector("ul");
+     console.log(var1)
+     let var2=document.querySelectorAll("li");
+     console.log(var2);
+
+     for(list of var2){
+      var1.removeChild(list);
+     }
+
+
+   </script>
+    
+</body>
+</html>
